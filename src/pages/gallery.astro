@@ -1,4 +1,5 @@
 ---
+import Header from '@components/Header.astro';
 import Layout from 'src/layouts/Layout.astro';
 ---
 
@@ -6,106 +7,7 @@ import Layout from 'src/layouts/Layout.astro';
   title="Arjwan - Cargo & Shipping"
   description="Whether you have a question about transport, logistics, pricing details, experience, or delivery details please contact us using the form and the other information on this page."
 >
-  <div class="header-section">
-    <div class="header">
-      <div class="w-container container">
-        <div class="header-link-wrap">
-          <a href="/" aria-current="page" class="logo-wrap w-inline-block w--current md:max-w-[477px]"
-            ><img src="/images/logo2.png" loading="lazy" alt="Logistics Logo" /></a
-          >
-          <div class="header-link-block">
-            <div class="header-link-card">
-              <div class="header-icon-wrap">
-                <img src="/images/clock-icon-yellow.svg" loading="lazy" alt="Clock Icon" />
-              </div>
-              <div>
-                <p class="header-link-text">Mon - Thur 8AM - 6PM</p>
-              </div>
-            </div>
-            <div class="header-link-card">
-              <div class="header-icon-wrap">
-                <img src="/images/mail-icon-yellow.svg" loading="lazy" alt="Mail Icon" />
-              </div>
-              <div>
-                <p class="header-link-text">Email</p>
-                <a href="mailto:lisan@arjwanoman.com" class="header-link-text hover-yellow">info@arjwanoman.com</a>
-              </div>
-            </div>
-            <div class="header-link-card">
-              <div class="header-icon-wrap">
-                <img src="/images/phone-icon-yellow.svg" loading="lazy" alt="Phone Icon" />
-              </div>
-              <div>
-                <p class="header-link-text">Call Us</p>
-                <a href="tel:(00)122456789" class="header-link-text hover-yellow">+968 71113157</a>
-                <br />
-                <a href="tel:(00)122456789" class="header-link-text hover-yellow">+968 71113159</a>
-                <br />
-                <a href="tel:(00)122456789" class="header-link-text hover-yellow">+968 71113184</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      data-animation="default"
-      data-collapse="medium"
-      data-duration="400"
-      data-easing="ease"
-      data-easing2="ease"
-      role="banner"
-      class="navigation-bar w-nav"
-    >
-      <div class="nav-bar-container">
-        <nav role="navigation" class="navigation-menu w-nav-menu">
-          <a href="/" aria-current="page" class="navigation-link w-nav-link w--current">Home</a>
-          <div class="nav-menu-line"></div>
-          <a href="/about-us/" class="navigation-link w-nav-link">About Us</a>
-          <!-- <div class="nav-menu-line"></div> -->
-          <!-- <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
-            <div class="navigation-link dropdown w-dropdown-toggle">
-              <div class="navigation-icon w-icon-dropdown-toggle"></div>
-              <div>Pages</div>
-            </div>
-            <nav class="nav-dropdown-list w-dropdown-list">
-              <a href="/service/" class="nav-dropdown-link w-dropdown-link">Services</a>
-              <a href="/service-single/" class="nav-dropdown-link w-dropdown-link">Service Single</a>
-              <a href="/our-team/" class="nav-dropdown-link w-dropdown-link">Our Team</a>
-              <a href="/pricing/" class="nav-dropdown-link w-dropdown-link">Pricing</a>
-              <a href="/blog/" class="nav-dropdown-link w-dropdown-link">Blog</a>
-            </nav>
-          </div> -->
-          <!-- <div class="nav-menu-line"></div> -->
-          <!-- <a href="/our-project/" class="navigation-link w-nav-link">Projects</a> -->
-          <div class="nav-menu-line"></div>
-          <a href="/service/" class="navigation-link w-nav-link">Services</a>
-          <div class="nav-menu-line"></div>
-          <a href="/gallery/" class="navigation-link w-nav-link">Gallery</a>
-        </nav>
-        <div class="navigation-button-wrap">
-          <div class="nav-social-media-wrap">
-            <a href="http://www.instagram.com" target="_blank" class="social-media-link w-inline-block"
-              ><img src="/images/Insta-icon.svg" loading="lazy" alt="Instagram Icon" class="social-icon" /></a
-            >
-            <a href="http://www.facebook.com" target="_blank" class="social-media-link w-inline-block"
-              ><img src="/images/fb-icon.svg" loading="lazy" alt="Facebook Icon" class="social-icon" /></a
-            >
-            <a href="http://www.twitter.com" target="_blank" class="social-media-link w-inline-block"
-              ><img src="/images/twiter-icon.svg" loading="lazy" alt="Twitter Icon" class="social-icon" /></a
-            >
-            <a href="http://www.linkedin.com" target="_blank" class="social-media-link w-inline-block"
-              ><img src="/images/linkedIn-icon.svg" loading="lazy" alt="LinkedIn Icon" class="social-icon" /></a
-            >
-          </div>
-          <a href="/contact-us/" class="navigation-button w-button">Request Quote</a>
-        </div>
-        <div class="nav-menu-button w-nav-button">
-          <div class="w-icon-nav-menu"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Header />
   <div class="project-banner">
     <div class="container w-container">
       <div>
