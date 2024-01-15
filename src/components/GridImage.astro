@@ -1,0 +1,28 @@
+---
+import { Picture } from 'astro:assets';
+import { EditableImage } from './EditableImage';
+
+const { heroData, img, className } = Astro.props;
+
+const { data } = heroData;
+const { hero_section } = data;
+---
+
+<!-- <EditableImage client:tina heroData={heroData} img={img}  class="image-background">
+  <Image src={hero_section[img]} width={600} height={600} alt="portfolio-1" class="image-background" />
+</EditableImage> --><!-- sizes={`(max-width: 767px) 70vw, (max-width: 991px) 50vw, 40vw, ${hero_section[img].width}px`} -->
+<EditableImage client:tina heroData={heroData} img={img}>
+  <Picture
+    src={hero_section[img]}
+    width={1600}
+    height={1067}
+    widths={[300, 500, 1080, 1600]}
+    sizes={`(max-width: 340px) 300px, (max-width: 720px) 500px, (max-width: 1600px) 1080px, 1600px`}
+    alt="portfolio-1"
+    class="image-background"
+    formats={['avif', 'webp']}
+    loading="eager"
+    fetchpriority="high"
+    class={className}
+  />
+</EditableImage>

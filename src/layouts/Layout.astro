@@ -1,0 +1,79 @@
+---
+import '../styles/normalize.css';
+import '../styles/webflow.css';
+import '../styles/mohammeds-beautiful-site-322714e759ebe1.webflow.css';
+
+import SEO from '../components/SEO.astro';
+import { ViewTransitions } from 'astro:transitions';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  siteName?: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterHandle?: string;
+  slug?: string;
+}
+
+const {
+  title,
+  description,
+  siteName = 'cliqbait',
+  canonical,
+  ogImage,
+  ogType,
+  twitterHandle,
+  slug,
+} = Astro.props as Props;
+---
+
+<html data-wf-page="656da3032bcd6c9f0a804153" data-wf-site="656da3032bcd6c9f0a8040df">
+  <head>
+    <SEO {...{ title, description, siteName, canonical, ogImage, ogType, twitterHandle, slug }} />
+    <ViewTransitions fallback="swap" />
+    <!-- <script src="../scripts/gsap"></script> -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/partytown"></script>
+    <script type="text/partytown">
+      WebFont.load({
+        google: {
+          families: ['Krub:300,regular,500,600', 'Rubik:regular,500,600,700,800', 'League Spartan:300,regular,500,600'],
+        },
+      });
+    </script>
+    <script type="text/partytown">
+      !(function (o, c) {
+        var n = c.documentElement,
+          t = ' w-mod-';
+        (n.className += t + 'js'),
+          ('ontouchstart' in o || (o.DocumentTouch && c instanceof DocumentTouch)) && (n.className += t + 'touch');
+      })(window, document);
+    </script>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=G-0FQ39RY9CC`} type="text/partytown"
+    ></script>
+
+    <script is:inline type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        window.dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-0FQ39RY9CC');
+    </script>
+    <base href="/" />
+  </head>
+
+  <body>
+    <!--Start Preloader -->
+
+    <!--End Preloader -->
+    <slot />
+
+    <script is:inline src="/js/jquery.min.js"></script>
+
+    <script is:inline src="/js/webflow.js"></script>
+  </body>
+</html>

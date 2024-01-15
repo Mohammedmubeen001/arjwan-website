@@ -1,0 +1,81 @@
+---
+export interface Props {
+  title?: string;
+  description?: string;
+  siteName?: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+  twitterHandle?: string;
+  slug?: string;
+}
+
+const DOMAIN = 'https://arjwanoman.com/';
+const DEFAULT_OG_IMAGE = 'https://arjwanoman.com/studio-image.jpg';
+const {
+  title = 'Arjwan Oman',
+  description = 'Creative design agency in mangalore',
+  siteName = 'Arjwan Oman',
+  canonical = DOMAIN,
+  ogImage,
+  ogType = 'website',
+  twitterHandle = '@Arjwan',
+  slug = undefined,
+} = Astro.props as Props;
+---
+
+{title === 'Arjwan' ? <title>{`${siteName}`}</title> : <title>{`${title} | ${siteName}`}</title>}
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta
+  name="viewport"
+  content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+/>
+<meta name="generator" content={Astro.generator} />
+<link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+<!-- <meta name="title" content={title === 'Arjwan' ? 'Arjwan' : `${title} | ${siteName}`} /> -->
+<meta name="title" content={`${title} | ${siteName}`} />
+
+<meta name="description" content={description} />
+
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={canonical} />
+<!-- <meta property="og:title" content={title === 'Arjwan' ? 'Portfolio & Blog' : `${title} | ${siteName}`} /> -->
+<meta property="og:title" content={`${title} | ${siteName}`} />
+
+<meta property="og:description" content={description} />
+<meta property="og:image" content={slug !== undefined ? ogImage : DEFAULT_OG_IMAGE} />
+<meta property="og:image:alt" content={slug !== undefined ? title + 'Social Image' : 'Arjwan Codes Social Image'} />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonical} />
+<meta property="twitter:title" content={title === 'Arjwan' ? 'Portfolio & Blog' : `${title} | ${siteName}`} />
+<meta property="twitter:creator" content={twitterHandle} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={slug !== undefined ? ogImage : DEFAULT_OG_IMAGE} />
+<meta
+  property="twitter:image:alt"
+  content={slug !== undefined ? title + 'Social Image' : 'Arjwan Codes Social Image'}
+/>
+
+<link rel="canonical" href={canonical ?? DOMAIN} />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="application-name" content="Arjwan" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Arjwan" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="mobile-web-app-capable" content="yes" />
