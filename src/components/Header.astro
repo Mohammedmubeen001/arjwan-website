@@ -7,9 +7,6 @@ const currentPath = Astro.url.pathname;
   <div class="header">
     <div class="w-container container">
       <div class="header-link-wrap">
-        <a href="/" aria-current="page" class="logo-wrap w-inline-block w--current md:max-w-[477px]"
-          ><img src="/images/logo2.png" loading="lazy" alt="Logistics Logo" /></a
-        >
         <div class="header-link-block">
           <div class="header-link-card">
             <div class="header-icon-wrap">
@@ -55,6 +52,9 @@ const currentPath = Astro.url.pathname;
     class="navigation-bar w-nav"
   >
     <div class="nav-bar-container">
+      <a href="/" aria-current="page" class="logo-wrap w-inline-block w--current md:max-w-[477px]">
+        <img src="/images/Logo.png" loading="lazy" alt="Logistics Logo" />
+      </a>
       <nav role="navigation" class="navigation-menu w-nav-menu">
         <a
           href="/"

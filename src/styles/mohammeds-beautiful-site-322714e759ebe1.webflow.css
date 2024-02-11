@@ -647,7 +647,7 @@ blockquote {
 
 .footer-logo-wrap {
   min-width: 100%;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
 }
 
 .footer-text {
@@ -805,7 +805,7 @@ blockquote {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -81px;
+  margin-top: -111px;
   padding-top: 250px;
   padding-bottom: 220px;
   position: relative;
@@ -3558,7 +3558,7 @@ blockquote {
   }
 
   .banner-section {
-    margin-top: -75px;
+    margin-top: -115px;
     padding-top: 180px;
     padding-bottom: 120px;
   }
@@ -5687,7 +5687,7 @@ blockquote {
   }
 }
 .logo-wrap {
-  width: 477px;
+  width: 80px;
 }
 
 .fb1 {
