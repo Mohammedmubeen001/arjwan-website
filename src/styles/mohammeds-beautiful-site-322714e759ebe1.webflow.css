@@ -1561,7 +1561,7 @@ blockquote {
     100% 100%;
   background-repeat: repeat, repeat;
   background-size: auto, cover;
-  margin-top: -81px;
+  margin-top: -110px;
   padding-top: 200px;
   padding-bottom: 200px;
   position: relative;
@@ -1824,7 +1824,7 @@ blockquote {
     0%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
-  margin-top: -81px;
+  margin-top: -110px;
   padding-top: 200px;
   padding-bottom: 130px;
   position: relative;
@@ -2034,7 +2034,7 @@ blockquote {
     0%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
-  margin-top: -81px;
+  margin-top: -110px;
   padding-top: 220px;
   padding-bottom: 150px;
   position: relative;
@@ -2990,6 +2990,7 @@ blockquote {
     padding-left: 0;
     padding-right: 0;
     display: flex;
+    margin-top: 4px;
   }
 
   .navigation-button-wrap {
@@ -3558,7 +3559,7 @@ blockquote {
   }
 
   .banner-section {
-    margin-top: -115px;
+    margin-top: -117px;
     padding-top: 180px;
     padding-bottom: 120px;
   }
@@ -3747,7 +3748,7 @@ blockquote {
 
   .about-us-banner {
     background-position: 100%;
-    margin-top: -75px;
+    margin-top: -117px;
     padding-top: 170px;
     padding-bottom: 160px;
   }
@@ -3817,7 +3818,7 @@ blockquote {
 
   .service-banner {
     background-position: 50%;
-    margin-top: -75px;
+    margin-top: -117px;
     padding-top: 170px;
   }
 
@@ -3873,7 +3874,7 @@ blockquote {
   }
 
   .project-banner {
-    margin-top: -75px;
+    margin-top: -117px;
     padding-top: 200px;
     padding-bottom: 140px;
   }
