@@ -65,7 +65,7 @@ const currentPath = Astro.url.pathname;
         >
         <div class="nav-menu-line"></div>
         <a
-          href="about-us.html"
+          href="about-us"
           class:list={['navigation-link w-nav-link ', currentPath === '/about-us/' ? 'w--current' : '']}>About Us</a
         >
         <!-- <div class="nav-menu-line"></div> -->
@@ -85,9 +85,8 @@ const currentPath = Astro.url.pathname;
         <!-- <div class="nav-menu-line"></div> -->
         <!-- <a href="/our-project/" class="navigation-link w-nav-link">Projects</a> -->
         <div class="nav-menu-line"></div>
-        <a
-          href="service.html"
-          class:list={['navigation-link w-nav-link ', currentPath === '/service/' ? 'w--current' : '']}>Services</a
+        <a href="service" class:list={['navigation-link w-nav-link ', currentPath === '/service/' ? 'w--current' : '']}
+          >Services</a
         >
         <div class="nav-menu-line"></div>
 
